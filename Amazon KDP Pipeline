@@ -1,0 +1,4 @@
+cd ~/Legacy-Works-Publishing
+tar -xzf ~/Downloads/lwp-pipeline-complete.tar.gz
+git add -A && git commit -m "feat: complete autonomous KDP pipeline"
+git push origin main
