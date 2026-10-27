@@ -1,0 +1,32 @@
+{
+  "brand": "Tik Tots",
+  "canonical_url": "tiktotskids.com",
+  "forbidden_text": [
+    "www.tiktots.com",
+    "tiktoktskids.com",
+    "tiktokotskids.com",
+    "tik toks kids.com"
+  ],
+  "approved_characters": [
+    "Tiko",
+    "Mia",
+    "Jax",
+    "Zee",
+    "Lulu",
+    "Buddy"
+  ],
+  "interior": {
+    "mode": "line_art",
+    "max_color_fraction": 0.01,
+    "min_width": 1000,
+    "min_height": 1000,
+    "trim_inches": [8.5, 11],
+    "dpi": 300,
+    "require_review": true,
+    "min_effective_dpi": 300
+  },
+  "voiceover": {
+    "voice": "warm-kids-narrator",
+    "words_per_minute": 150
+  }
+}

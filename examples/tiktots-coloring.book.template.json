@@ -1,0 +1,14 @@
+{
+  "title": "Tik Tots Big Coloring Book",
+  "expected_pages": 50,
+  "pages": [
+    {
+      "id": "001",
+      "asset": "assets/001.png",
+      "kind": "coloring",
+      "visible_text": ["tiktotskids.com"],
+      "characters": ["Tiko", "Mia", "Jax", "Zee", "Lulu", "Buddy"],
+      "review_status": "pending"
+    }
+  ]
+}
