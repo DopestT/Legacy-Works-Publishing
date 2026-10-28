@@ -1,0 +1,48 @@
+{
+  "book": "Tik Tots Big Coloring Book",
+  "target_total_coloring_pages": 50,
+  "existing_candidate_pages": 28,
+  "new_pages_required": 22,
+  "render_spec": {
+    "trim_inches": [8.5, 11],
+    "target_pixels": [2550, 3300],
+    "style": "clean black-and-white children's coloring-book line art",
+    "rules": [
+      "white background",
+      "bold clean outlines",
+      "no grayscale fill",
+      "no color",
+      "no photographic shading",
+      "portrait composition",
+      "safe margins",
+      "consistent Tik Tots cast",
+      "Buddy wears B collar tag",
+      "no website text baked into image",
+      "no large generated text signs"
+    ]
+  },
+  "pages": [
+    {"book_page":29,"slug":"library-adventure","characters":["Tiko","Mia","Zee","Buddy"],"scene":"Whimsical library with tall shelves, books, reading cushions, and a tiny glowing door discovered between shelves."},
+    {"book_page":30,"slug":"robot-coding-day","characters":["Tiko","Zee","Lulu","Buddy"],"scene":"Friendly small robot navigating a simple floor maze made of arrows and blocks while the kids solve the route together."},
+    {"book_page":31,"slug":"ocean-discovery","characters":["Mia","Jax","Zee","Buddy"],"scene":"Underwater observation room with large windows, fish, coral forms, shells, and the kids sketching what they see."},
+    {"book_page":32,"slug":"weather-station","characters":["Tiko","Zee","Lulu","Buddy"],"scene":"Kid-friendly weather station with wind sock, rain gauge, clouds, sun, thermometer shapes, clipboards, and teamwork."},
+    {"book_page":33,"slug":"animal-care-day","characters":["Mia","Zee","Lulu","Buddy"],"scene":"Gentle animal-care scene with brushes, bowls, blankets, toys, and another friendly pet being welcomed safely."},
+    {"book_page":34,"slug":"team-relay","characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"],"scene":"Outdoor cooperative relay with cones, hoops, balance stepping stones, cheering teammates, and a playful finish line."},
+    {"book_page":35,"slug":"dance-studio","characters":["Mia","Jax","Zee","Buddy"],"scene":"Dance studio with mirrors, music symbols, simple kid-safe poses, and the crew learning a fun routine together."},
+    {"book_page":36,"slug":"cooking-together","characters":["Tiko","Mia","Jax","Buddy"],"scene":"Kid-safe kitchen with fruit, bowls, measuring cups, mixing, simple snack decorating, and cleanup teamwork."},
+    {"book_page":37,"slug":"nature-hike","characters":["Tiko","Lulu","Zee","Buddy"],"scene":"Nature trail with leaves, trail markers, binoculars, bug viewer, water bottles, flowers, and a scenic overlook."},
+    {"book_page":38,"slug":"birdwatching-morning","characters":["Mia","Lulu","Zee","Buddy"],"scene":"Quiet birdwatching scene with binoculars, birdhouse, sketchbook, feathers on the ground, and nests observed respectfully."},
+    {"book_page":39,"slug":"community-cleanup","characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"],"scene":"Park cleanup with gloves, recycling bins, litter grabbers, flowers, and the space visibly becoming cleaner as the team works."},
+    {"book_page":40,"slug":"recycling-invention","characters":["Tiko","Zee","Jax","Buddy"],"scene":"Craft table where cardboard, bottles, boxes, gears, tape, and wheels become a playful invention made from reused materials."},
+    {"book_page":41,"slug":"simple-machines-lab","characters":["Tiko","Zee","Lulu","Buddy"],"scene":"Hands-on lab with ramps, pulleys, levers, wheels, balls, and blocks showing how simple machines move things."},
+    {"book_page":42,"slug":"world-map-adventure","characters":["Tiko","Mia","Lulu","Buddy"],"scene":"Giant floor map with compass, globe, route cards, mountains, desert, forest, island, and snowy landscape icons without stereotypes."},
+    {"book_page":43,"slug":"dinosaur-museum","characters":["Tiko","Mia","Zee","Buddy"],"scene":"Museum with friendly fossil displays, dinosaur footprints, skeleton exhibits, magnifying glass, and a small paleontology dig table."},
+    {"book_page":44,"slug":"aquarium-helpers","characters":["Mia","Jax","Zee","Buddy"],"scene":"Aquarium education room with observation tanks, sea-creature drawings, water-testing tools, shells, and conservation-themed visual symbols."},
+    {"book_page":45,"slug":"kindness-mail","characters":["Tiko","Mia","Lulu","Buddy"],"scene":"Kids making cheerful cards, decorating envelopes, and sorting them into colorful-shaped mailboxes for friends and neighbors."},
+    {"book_page":46,"slug":"puppet-theater","characters":["Mia","Jax","Lulu","Buddy"],"scene":"Homemade puppet theater with curtain stage, puppets, simple props, story cards, and friends performing for one another."},
+    {"book_page":47,"slug":"playground-designers","characters":["Tiko","Zee","Lulu","Buddy"],"scene":"Design table with ruler, blueprint sheets, blocks, slide and swing models, and a miniature playground assembled collaboratively."},
+    {"book_page":48,"slug":"train-station-adventure","characters":["Tiko","Jax","Lulu","Buddy"],"scene":"Friendly toy-like train station with tracks, route map shapes, clocks, simple luggage, platform signs left blank, and connected routes."},
+    {"book_page":49,"slug":"puzzle-door-challenge","characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"],"scene":"Magical door surrounded by pattern puzzles, shape keys, gears, arrows, and visual clues the team solves together."},
+    {"book_page":50,"slug":"brighter-world-finale","characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"],"scene":"All five kids and Buddy celebrating at a giant open magical doorway surrounded by visual icons from the book: art, music, science, kindness, building, nature, books, and stars."}
+  ]
+}
