@@ -1,0 +1,17 @@
+{
+  "title": "Tik Tots: The Endless Scroll",
+  "pages": [
+    {"id":"001","narration":"Welcome to Tik Tots, a world full of creators, dreamers, and best friends!","duration_seconds":5,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]},
+    {"id":"002","narration":"But when Tiko can't stop scrolling, time starts to disappear.","duration_seconds":5,"characters":["Tiko"]},
+    {"id":"003","narration":"Suddenly, a mysterious glowing door appears. Where could it lead?","duration_seconds":4,"characters":["Tiko"]},
+    {"id":"004","narration":"Together, the Tik Tots step through, with Buddy right beside them.","duration_seconds":5,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]},
+    {"id":"005","narration":"They discover the Endless Scroll, where everyone has forgotten how to create.","duration_seconds":5,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]},
+    {"id":"006","narration":"This isn't fun, and it isn't real. The friends know they have to change it.","duration_seconds":5,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]},
+    {"id":"007","narration":"They use their talents: draw, sing, build, solve, explore, and imagine!","duration_seconds":5,"characters":["Mia","Jax","Zee","Lulu"]},
+    {"id":"008","narration":"Together they create something amazing, and kindness and teamwork bring the world back to life.","duration_seconds":7,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]},
+    {"id":"009","narration":"The world is bright again, and the adventure never ends.","duration_seconds":5,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]},
+    {"id":"010","narration":"Friendship, creativity, and good vibes. That's what Tik Tots is all about.","duration_seconds":6,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]},
+    {"id":"011","narration":"There's always another door, and another adventure waiting for you.","duration_seconds":5,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]},
+    {"id":"012","narration":"Don't just scroll. Create, imagine, share, and smile.","duration_seconds":4,"characters":["Tiko","Mia","Jax","Zee","Lulu","Buddy"]}
+  ]
+}
