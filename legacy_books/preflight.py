@@ -15,7 +15,8 @@ def _color_fraction(image: Image.Image) -> float:
     if total == 0:
         return 0.0
     colored = 0
-    for r, g, b in sample.get_flattened_data():
+    pixel_data = sample.get_flattened_data() if hasattr(sample, "get_flattened_data") else sample.getdata()
+    for r, g, b in pixel_data:
         if max(r, g, b) - min(r, g, b) > 18:
             colored += 1
     return colored / total
@@ -71,7 +72,7 @@ def preflight(book_path: str | Path, profile_path: str | Path) -> PreflightRepor
 
         asset_value = page.get("asset")
         if asset_value:
-            normalized_asset = str(Path(asset_value).as_posix()).lower()
+            normalized_asset = str((book_path.parent / asset_value).resolve())
             if normalized_asset in seen_assets:
                 errors.append(Issue("duplicate_asset", f"Interior asset reused: {asset_value}", page_id))
             seen_assets.add(normalized_asset)
@@ -83,15 +84,17 @@ def preflight(book_path: str | Path, profile_path: str | Path) -> PreflightRepor
             errors.append(Issue("missing_asset", f"Asset not found: {asset_value}", page_id))
             continue
 
-        digest = hashlib.sha256(asset.read_bytes()).hexdigest()
-        if digest in seen_hashes:
-            errors.append(Issue("duplicate_content", f"Image content duplicates page {seen_hashes[digest]}", page_id))
-        else:
-            seen_hashes[digest] = page_id
-
         try:
             with Image.open(asset) as image:
                 width, height = image.size
+                pixels = image.convert("RGBA")
+                digest = hashlib.sha256(
+                    f"{width}x{height}:RGBA:".encode("ascii") + pixels.tobytes()
+                ).hexdigest()
+                if digest in seen_hashes:
+                    errors.append(Issue("duplicate_content", f"Image content duplicates page {seen_hashes[digest]}", page_id))
+                else:
+                    seen_hashes[digest] = page_id
                 if width < min_width or height < min_height:
                     errors.append(Issue("low_resolution", f"Page is {width}x{height}; minimum is {min_width}x{min_height}", page_id))
                 if trim_inches and min_effective_dpi is not None:
