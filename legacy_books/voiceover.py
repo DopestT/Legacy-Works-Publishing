@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import math
 from html import escape
 from pathlib import Path
 
@@ -45,11 +46,15 @@ def build_voiceover_package(book_path: str | Path, profile_path: str | Path, out
 
         raw_duration = page.get("duration_seconds")
         duration = float(raw_duration if raw_duration is not None else _estimated_duration(text, words_per_minute))
-        if duration <= 0:
+        if not math.isfinite(duration) or duration <= 0:
             raise ValueError(f"duration must be positive on page {page_id}")
         duration = round(duration, 3)
+        if duration <= 0:
+            raise ValueError(f"duration must be positive on page {page_id}")
         start = round(cursor, 3)
         end = round(start + duration, 3)
+        if not math.isfinite(end):
+            raise ValueError(f"timeline duration must be finite on page {page_id}")
         cursor = end
 
         narration_lines.append(text)
